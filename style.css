@@ -1,59 +1,41 @@
-/* Reset some default styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Apply a box-sizing border-box model to all elements */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+/* Reset and basics (keep your existing ones) */
+/* ... */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e0f2f1; /* Light blue background color */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure the content takes at least the full height of the viewport */
+  /* ... (existing styles */
+  background-color: #fff; /* White background, adjust as needed */
 }
 
-header {
-    background-color: #1e90ff;
-    color: #fff;
-    padding: 2em;
-    text-align: center;
+.container {
+  max-width: 960px; /* Limit content width */
+  margin: 0 auto;   /* Center content horizontally */
+  padding: 0 20px;  /* Add padding on sides */
 }
 
-header h1 {
-    font-size: 2.5em;
+#hero {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 3em 0;
+  text-align: center;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: 0.5em;
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make the image circular */
+  margin-top: 20px;
 }
 
-main {
-    flex: 1; /* Allow the main content to expand to fill available space */
-    padding: 2em;
-    text-align: center;
+/* Styling for each section */
+#about, #projects, #contact {
+  padding: 3em 0;
 }
 
-main h2 {
-    font-size: 2em;
-    color: #333;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
 }
 
-main p {
-    font-size: 1.1em;
-    color: #555;
-}
 
-footer {
-    background-color: #1e90ff;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-}
+/* ... add styles for project-item, contact-links, etc as needed */ 
